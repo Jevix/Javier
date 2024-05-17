@@ -11,7 +11,10 @@
         <h1>Bienvenido a nuestra Tienda</h1>
     </header>
     <nav>
-        <ul>
+        <div class="menu-icon" onclick="toggleMenu()">
+            &#9776;
+        </div>
+        <ul id="nav-menu">
             <li><a href="#">Inicio</a></li>
             <li><a href="#">Productos</a></li>
             <li><a href="#">Contacto</a></li>
@@ -46,5 +49,16 @@
     <footer>
         <p>&copy; 2024 Tienda Ejemplo. Todos los derechos reservados.</p>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('nav-menu');
+            if (menu.style.display === 'block') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'block';
+            }
+        }
+    </script>
 </body>
 </html>
