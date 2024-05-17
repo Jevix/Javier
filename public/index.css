@@ -1,21 +1,95 @@
-pre {
-  margin: 0 auto;
-  padding: 10px;
-  background: lightcyan;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+nav {
+  background-color: #333;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+  display: block;
+}
+
+nav ul li a:hover {
+  background-color: #575757;
+}
+
+main {
+  padding: 2rem;
+}
+
+.product-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.product-item {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 1rem;
+  width: 300px;
   text-align: center;
 }
-.center {
+
+.product-item img {
+  max-width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 1rem;
+}
+
+.price {
+  font-weight: bold;
+  color: #4CAF50;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
   text-align: center;
-  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
 }
-.center button {
-  border: 3px solid green;
-  background: white;
-  border-radius: 10px;
-  padding: 10px;
+
+button:hover {
+  background-color: #45a049;
 }
-.container {
-  margin: 0 auto;
-  max-width: 500px;
-  width: 50%;
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }

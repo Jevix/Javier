@@ -3,67 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Web</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-        }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 1rem;
-            text-align: center;
-        }
-        nav {
-            margin: 1rem;
-            text-align: center;
-        }
-        nav a {
-            margin: 0 1rem;
-            text-decoration: none;
-            color: #4CAF50;
-        }
-        main {
-            padding: 1rem;
-            margin: 1rem;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        footer {
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
+    <title>Shop Store</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <header>
-        <h1>Bienvenidos a Mi Página Web</h1>
+        <h1>Bienvenido a nuestra Tienda</h1>
     </header>
     <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Sobre mí</a>
-        <a href="#">Contacto</a>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Productos</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Sobre Nosotros</a></li>
+        </ul>
     </nav>
     <main>
-        <h2>Introducción</h2>
-        <p>Esta es una página web de ejemplo creada para mostrar la estructura básica de un documento HTML. Puedes personalizarla según tus necesidades.</p>
-        <h3>Lista de cosas por hacer</h3>
-        <ul>
-            <li>Aprender HTML</li>
-            <li>Estudiar CSS</li>
-            <li>Practicar JavaScript</li>
-        </ul>
+        <section class="product-list">
+            <article class="product-item">
+                <img src="images/product1.jpg" alt="Producto 1">
+                <h2>Producto 1</h2>
+                <p>Descripción del producto 1.</p>
+                <p class="price">$19.99</p>
+                <button>Añadir al carrito</button>
+            </article>
+            <article class="product-item">
+                <img src="images/product2.jpg" alt="Producto 2">
+                <h2>Producto 2</h2>
+                <p>Descripción del producto 2.</p>
+                <p class="price">$29.99</p>
+                <button>Añadir al carrito</button>
+            </article>
+            <article class="product-item">
+                <img src="images/product3.jpg" alt="Producto 3">
+                <h2>Producto 3</h2>
+                <p>Descripción del producto 3.</p>
+                <p class="price">$39.99</p>
+                <button>Añadir al carrito</button>
+            </article>
+        </section>
     </main>
     <footer>
-        <p>&copy; 2024 Mi Página Web. Todos los derechos reservados.</p>
+        <p>&copy; 2024 Tienda Ejemplo. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
