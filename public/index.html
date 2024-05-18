@@ -5,61 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pro Hogar</title>
     <link rel="stylesheet" href="index.css">
-    <style>
-        /* Estilos de la ventana emergente (modal) */
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1000;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            background-color: rgba(0, 0, 0, 0.5);
-        }
-        .modal-content {
-            background-color: #fff;
-            margin: 10% auto;
-            padding: 20px;
-            border: 1px solid #888;
-            width: 80%;
-            max-width: 800px;
-            position: relative;
-        }
-        .modal-header, .modal-body, .modal-footer {
-            padding: 10px;
-        }
-        .modal-header {
-            border-bottom: 1px solid #ddd;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .modal-header h2 {
-            margin: 0;
-        }
-        .close {
-            color: #aaa;
-            font-size: 28px;
-            font-weight: bold;
-            cursor: pointer;
-        }
-        .close:hover,
-        .close:focus {
-            color: #000;
-            text-decoration: none;
-            cursor: pointer;
-        }
-        .modal-body img {
-            width: 100%;
-            height: auto;
-        }
-        .modal-footer {
-            border-top: 1px solid #ddd;
-            text-align: right;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -82,6 +27,7 @@
                 <button onclick="openModal('modal1')">Ver más</button>
             </article>
 
+            <!-- Ventana emergente (modal) -->
             <div id="modal1" class="modal">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -89,26 +35,29 @@
                         <span class="close" onclick="closeModal('modal1')">&times;</span>
                     </div>
                     <div class="modal-body">
-                        <img src="imagenes/barcelosbeigecara01.png" alt="Barcelo Beige">
-                        <p>Uso: Piso</p>
-                        <p>Junta: 3mm</p>
-                        <p>Acabado: Brillante</p>
-                        <p>Textura: Liso</p>
-                        <p>Revestimiento mínimo: 3mm</p>
+                        <div class="carousel">
+                            <img src="imagenes/BarceloBeige/barcelobeige1.png" alt="Barcelo Beige" class="carousel-image">
+                            <img src="imagenes/BarceloBeige/barcelobeige2.png" alt="Barcelo Beige" class="carousel-image" style="display:none;">
+                            <img src="imagenes/BarceloBeige/barcelobeige3.png" alt="Barcelo Beige" class="carousel-image" style="display:none;">
+                            <img src="imagenes/BarceloBeige/barcelobeige4.png" alt="Barcelo Beige" class="carousel-image" style="display:none;">
+                            <img src="imagenes/BarceloBeige/barcelobeige5.png" alt="Barcelo Beige" class="carousel-image" style="display:none;">
+                            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                        </div>
+                        <div class="carousel-indicators">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                            <span class="dot" onclick="currentSlide(4)"></span>
+                            <span class="dot" onclick="currentSlide(5)"></span>
+                        </div>
+                        <p>Uso: Piso Junta: 3mm Acabado: Brillante Textura: Liso Revestimiento mínimo: 3mm</p>
                     </div>
                     <div class="modal-footer">
                         <button onclick="closeModal('modal1')">Cerrar</button>
                     </div>
                 </div>
             </div>
-        
-
-
-
-
-
-
-
 
             <article class="product-item">
                 <img src="imagenes/blancosatinado.png" alt="Blanco Satinado">
@@ -186,34 +135,70 @@
             var menu = document.getElementById('nav-menu');
             menu.classList.toggle('show');
         }
-    </script>
 
+        function openModal(modalId) {
+            var modal = document.getElementById(modalId);
+            modal.style.display = "block";
+            showSlides(slideIndex);
+        }
 
-<script>
-    function toggleMenu() {
-        var menu = document.getElementById('nav-menu');
-        menu.classList.toggle('show');
-    }
+        function closeModal(modalId) {
+            var modal = document.getElementById(modalId);
+            modal.style.display = "none";
+        }
 
-    function openModal(modalId) {
-        var modal = document.getElementById(modalId);
-        modal.style.display = "block";
-    }
-
-    function closeModal(modalId) {
-        var modal = document.getElementById(modalId);
-        modal.style.display = "none";
-    }
-
-    // Cerrar el modal si el usuario hace clic fuera del contenido del modal
-    window.onclick = function(event) {
-        var modals = document.getElementsByClassName('modal');
-        for (var i = 0; i < modals.length; i++) {
-            if (event.target == modals[i]) {
-                modals[i].style.display = "none";
+        // Cerrar el modal si el usuario hace clic fuera del contenido del modal
+        window.onclick = function(event) {
+            var modals = document.getElementsByClassName('modal');
+            for (var i = 0; i < modals.length; i++) {
+                if (event.target == modals[i]) {
+                    modals[i].style.display = "none";
+                }
             }
         }
+
+        // Carrusel de imágenes
+        var slideIndex = 1;
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("carousel-image");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+        }
+
+        function changeSlide(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("carousel-image");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
     }
-</script>
+    for (i = 0; i < dots.length; i++) {
+        dots[i].classList.remove("active");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].classList.add("active");
+}
+    </script>
 </body>
 </html>
