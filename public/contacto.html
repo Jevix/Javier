@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro Hogar</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        /* Menú de navegación responsivo */
+        @media (max-width: 768px) {
+            #nav-menu {
+                display: none;
+                flex-direction: column;
+            }
+            #nav-menu.show {
+                display: flex;
+            }
+            .menu-icon {
+                display: block;
+                cursor: pointer;
+            }
+        }
+        @media (min-width: 769px) {
+            .menu-icon {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a nuestra Tienda</h1>
+    </header>
+    <nav>
+        <div class="menu-icon" onclick="toggleMenu()" aria-label="Menú">
+            &#9776;
+        </div>
+        <ul id="nav-menu">
+            <li><a href="#">Catálogo 2024</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="product-list">
+            <article class="product-item">
+                <img src="imagenes/barcelosbeigecara01.png" alt="Barcelo Beige">
+                <h2>Barcelo Beige</h2>
+                <button>Ver más</button>
+            </article>
+            <article class="product-item">
+                <img src="imagenes/blancosatinado.png" alt="Blanco Satinado">
+                <h2>Blanco Satinado</h2>
+                <button>Ver más</button>
+            </article>
+            <article class="product-item">
+                <img src="imagenes/cairo-gris-placa.png" alt="Cairo Gris">
+                <h2>Cairo Gris</h2>
+                <button>Ver más</button>
+            </article>
+            <article class="product-item">
+                <img src="imagenes/cairo-negro-placa.png" alt="Cairo Negro">
+                <h2>Cairo Negro</h2>
+                <button>Ver más</button>
+            </article>
+            <article class="product-item">
+                <img src="imagenes/californiagriscara01.png" alt="California Gris">
+                <h2>California Gris</h2>
+                <button>Ver más</button>
+            </article>
+            <article class="product-item">
+                <img src="imagenes/curupay.png" alt="Curupay simil madera">
+                <h2>Curupay simil madera</h2>
+                <button>Ver más</button>
+            </article>
+            <article class="product-item">
+                <img src="imagenes/denverbeige.png" alt="Denver Beige">
+                <h2>Denver Beige</h2>
+                <button>Ver más</button>
+            </article>
+            <article class="product-item">
+                <img src="imagenes/granadabeige.png" alt="Granada Beige">
+                <h2>Granada Beige</h2>
+                <button>Ver más</button>
+            </article>
+            <article class="product-item">
+                <img src="imagenes/paoibiza34x51.png" alt="Ibiza Blanco">
+                <h2>Ibiza Blanco</h2>
+                <button>Ver más</button>
+            </article>
+            <article class="product-item">
+                <img src="imagenes/calacta-placa.png" alt="Mármol Calacata">
+                <h2>Mármol Calacata</h2>
+                <button>Ver más</button>
+            </article>
+            <article class="product-item">
+                <img src="imagenes/modenabeige.png" alt="Módena Beige">
+                <h2>Módena Beige</h2>
+                <button>Ver más</button>
+            </article>
+            <article class="product-item">
+                <img src="imagenes/porfido.png" alt="Pórfido Rojo">
+                <h2>Pórfido Rojo</h2>
+                <button>Ver más</button>
+            </article>
+            <article class="product-item">
+                <img src="imagenes/shangai34x51panelweb.png" alt="Shanghigris">
+                <h2>Shanghigris</h2>
+                <button>Ver más</button>
+            </article>
+            <article class="product-item">
+                <img src="imagenes/statuario-blanco-placa.png" alt="Statuario Blanco">
+                <h2>Statuario Blanco</h2>
+                <button>Ver más</button>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Pro Hogar. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('nav-menu');
+            menu.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
