@@ -7,3 +7,5 @@ window.onload = function() {
       .then(({ msg }) => console.log(msg) || (message.innerHTML = msg))
   })
 }
+
+
