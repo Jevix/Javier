@@ -15,7 +15,7 @@ header {
 nav {
   background-color: #F47835;
   position: relative;
-  color:black;
+  
 }
 
 .menu-icon {
@@ -105,22 +105,26 @@ footer {
 
 @media (max-width: 768px) {
   .menu-icon {
-      display: block;
+    display: block;
   }
 
   nav ul {
-      display: none;
-      flex-direction: column;
-      width: 100%;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav ul.show {
+    display: flex;
   }
 
   nav ul li {
-      margin: 0;
-      text-align: center;
+    margin: 0;
+    text-align: center;
   }
 
   nav ul li a {
-      padding: 1rem 0;
+    padding: 1rem 0;
   }
 }
 

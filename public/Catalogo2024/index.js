@@ -1,3 +1,8 @@
+function toggleMenu() {
+    var menu = document.getElementById('nav-menu');
+    menu.classList.toggle('show');
+}
+
 function openModal(modalId) {
     document.getElementById(modalId).style.display = "block";
 }
@@ -40,3 +45,5 @@ function currentSlide(n) {
 document.querySelectorAll('.modal').forEach(modal => {
     showSlides(1, modal.id);
 });
+
+
