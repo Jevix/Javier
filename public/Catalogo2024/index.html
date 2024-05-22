@@ -20,11 +20,15 @@
             <li><a href="/contacto.html">Contacto</a></li>
     </ul>
 </nav>
+
+<style>
+    
+</style>
 <main>
 <section class="product-list">
     <!-- Barcelo Beige -->
     <article class="product-item">
-        <h2>Barcelo Beige</h2>
+        <h2>Barcelo Beige 46x46</h2>
         <img src="imagenes/barcelosbeigecara01.png" alt="Barcelo Beige">
         <button onclick="openModal('modal1')">Ver más</button>
 
@@ -32,7 +36,7 @@
     <div id="modal1" class="modal">
     <div class="modal-content">
     <div class="modal-header">
-    <h2>Barcelo Beige</h2>
+    <h2>Barcelo Beige 46x46</h2>
     <span class="close" onclick="closeModal('modal1')">&times;</span>
     </div>
     <div class="modal-body">
@@ -52,132 +56,22 @@
         <span class="dot" onclick="currentSlide(4)"></span>
         <span class="dot" onclick="currentSlide(5)"></span>
     </div>
-    <p>Uso: Piso Junta: 3mm Acabado: Brillante Textura: Liso Revestimiento mínimo: 3mm</p>
+    <div>
+        <div class="">
+        </div>
+    
+    </div>
+
     </div>
     <div class="modal-footer">
     <button onclick="closeModal('modal1')">Cerrar</button>
     </div>
     </div>
     </div>
-    </article>
-    <!-- Blanco Satinado -->
-    <article class="product-item">
-        <h2>Blanco Satinado</h2>
-        <img src="imagenes/blancosatinado.png" alt="Blanco Satinado">
-        
-        <button onclick="openModal('modal2')">Ver más</button>
-    
-        <!-- Ventana emergente (modal) -->
-        <div id="modal2" class="modal">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2>Blanco Satinado</h2>
-                    <span class="close" onclick="closeModal('modal2')">&times;</span>
-                </div>
-                <div class="modal-body">
-                    <div class="carousel">
-                        <img src="imagenes/BlancoSatinado/blancosatinado1.png" alt="Blanco Satinado" class="carousel-image">
-                        <img src="imagenes/BlancoSatinado/blancosatinado2.png" alt="Blanco Satinado" class="carousel-image">
-                        <img src="imagenes/BlancoSatinado/blancosatinado3.png" alt="Blanco Satinado" class="carousel-image">
-                        <img src="imagenes/BlancoSatinado/blancosatinado4.png" alt="Blanco Satinado" class="carousel-image">
-                        <img src="imagenes/BlancoSatinado/blancosatinado5.png" alt="Blanco Satinado" class="carousel-image">
-                        <img src="imagenes/BlancoSatinado/blancosatinado6.png" alt="Blanco Satinado" class="carousel-image">
-                        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-                        <a class="next" onclick="changeSlide(1)">&#10095;</a>
-                    </div>
-                    <div class="carousel-indicators">
-                        <span class="dot" onclick="currentSlide(1)"></span>
-                        <span class="dot" onclick="currentSlide(2)"></span>
-                        <span class="dot" onclick="currentSlide(3)"></span>
-                        <span class="dot" onclick="currentSlide(4)"></span>
-                        <span class="dot" onclick="currentSlide(5)"></span>
-                        <span class="dot" onclick="currentSlide(6)"></span>
-                    </div>
-                    <p>Uso: Piso Junta: 3mm Acabado: Brillante Textura: Liso Revestimiento mínimo: 3mm</p>
-                </div>
-                <div class="modal-footer">
-                    <button onclick="closeModal('modal2')">Cerrar</button>
-                </div>
-            </div>
-        </div>
-    </article>
-    <!-- Cairo Gris -->
-    <article class="product-item">
-        <h2>Cairo Gris</h2>
-        <img src="imagenes/cairo-gris-placa.png" alt="Cairo Gris">
-        
-        <button onclick="openModal('modal4')">Ver más</button>
-    
-        <!-- Ventana emergente (modal) -->
-        <div id="modal4" class="modal">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2>Cairo Gris</h2>
-                    <span class="close" onclick="closeModal('modal4')">&times;</span>
-                </div>
-                <div class="modal-body">
-                    <div class="carousel">
-                        <img src="imagenes/CairoGris/cairo-gris1.jpg" alt="Cairo Negro" class="carousel-image">
-                        <img src="imagenes/CairoGris/cairo-gris2.jpg" alt="Cairo Negro" class="carousel-image" style="display:none;">
-                        <img src="imagenes/CairoGris/cairo-gris3.jpg" alt="Cairo Negro" class="carousel-image" style="display:none;">
-                        <img src="imagenes/CairoGris/cairo-gris4.jpg" alt="Cairo Negro" class="carousel-image" style="display:none;">
-                        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-                        <a class="next" onclick="changeSlide(1)">&#10095;</a>
-                    </div>
-                    <div class="carousel-indicators">
-                        <span class="dot" onclick="currentSlide(1)"></span>
-                        <span class="dot" onclick="currentSlide(2)"></span>
-                        <span class="dot" onclick="currentSlide(3)"></span>
-                        <span class="dot" onclick="currentSlide(4)"></span>
-                    </div>
-                    <p>Uso: Piso Junta: 3mm Acabado: Brillante Textura: Liso Revestimiento mínimo: 3mm</p>
-                </div>
-                <div class="modal-footer">
-                    <button onclick="closeModal('modal4')">Cerrar</button>
-                </div>
-            </div>
-        </div>
-    </article>
-    <!-- Cairo Negro -->
-    <article class="product-item">
-        <h2>Cairo Negro</h2>
-        <img src="imagenes/cairo-negro-placa.png" alt="Cairo Negro">
-        
-        <button onclick="openModal('modal3')">Ver más</button>
-    
-        <!-- Ventana emergente (modal) -->
-        <div id="modal3" class="modal">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2>Cairo Negro</h2>
-                    <span class="close" onclick="closeModal('modal3')">&times;</span>
-                </div>
-                <div class="modal-body">
-                    <div class="carousel">
-                        <img src="imagenes/CairoNegro/cairo-negro1.jpg" alt="Cairo Negro" class="carousel-image">
-                        <img src="imagenes/CairoNegro/cairo-negro2.jpg" alt="Cairo Negro" class="carousel-image" style="display:none;">
-                        <img src="imagenes/CairoNegro/cairo-negro3.jpg" alt="Cairo Negro" class="carousel-image" style="display:none;">
-                        <img src="imagenes/CairoNegro/cairo-negro4.jpg" alt="Cairo Negro" class="carousel-image" style="display:none;">
-                        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-                        <a class="next" onclick="changeSlide(1)">&#10095;</a>
-                    </div>
-                    <div class="carousel-indicators">
-                        <span class="dot" onclick="currentSlide(1)"></span>
-                        <span class="dot" onclick="currentSlide(2)"></span>
-                        <span class="dot" onclick="currentSlide(3)"></span>
-                        <span class="dot" onclick="currentSlide(4)"></span>
-                    </div>
-                    <p>Uso: Piso Junta: 3mm Acabado: Brillante Textura: Liso Revestimiento mínimo: 3mm</p>
-                </div>
-                <div class="modal-footer">
-                    <button onclick="closeModal('modal3')">Cerrar</button>
-                </div>
-            </div>
-        </div>
-    </article>
+    </article>  
     <!-- California Gris -->
     <article class="product-item">
-        <h2>California Gris</h2>
+        <h2>California Gris 36x36</h2>
         <img src="imagenes/californiagriscara01.png" alt="California Gris">
         
         <button onclick="openModal('modal5')">Ver más</button>
@@ -186,7 +80,7 @@
         <div id="modal5" class="modal">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h2>California Gris</h2>
+                    <h2>California Gris 36x36</h2>
                     <span class="close" onclick="closeModal('modal5')">&times;</span>
                 </div>
                 <div class="modal-body">
@@ -204,7 +98,7 @@
                         <span class="dot" onclick="currentSlide(3)"></span>
                         <span class="dot" onclick="currentSlide(4)"></span>
                     </div>
-                    <p>Uso: Piso Junta: 3mm Acabado: Brillante Textura: Liso Revestimiento mínimo: 3mm</p>
+                    
                 </div>
                 <div class="modal-footer">
                     <button onclick="closeModal('modal5')">Cerrar</button>
@@ -212,306 +106,16 @@
             </div>
         </div>
     </article>
-    <!-- Curupay Simil Madera -->
-    <article class="product-item">
-        <h2>Curupay Simil Madera</h2>
-        <img src="imagenes/curupay.png" alt="Curupay Simil Madera">
-        
-        <button onclick="openModal('modal6')">Ver más</button>
-    
-        <!-- Ventana emergente (modal) -->
-        <div id="modal6" class="modal">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2>Curupay Simil Madera</h2>
-                    <span class="close" onclick="closeModal('modal6')">&times;</span>
-                </div>
-                <div class="modal-body">
-                    <div class="carousel">
-                        <img src="imagenes/CurupaySimilMadera/curupay1.png" alt="Curupay Simil Madera" class="carousel-image">
-                        <img src="imagenes/CurupaySimilMadera/curupay2.png" alt="Curupay Simil Madera" class="carousel-image" style="display:none;">
-                        <img src="imagenes/CurupaySimilMadera/curupay3.png" alt="Curupay Simil Madera" class="carousel-image" style="display:none;">
-                        <img src="imagenes/CurupaySimilMadera/curupay4.png" alt="Curupay Simil Madera" class="carousel-image" style="display:none;">
-                        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-                        <a class="next" onclick="changeSlide(1)">&#10095;</a>
-                    </div>
-                    <div class="carousel-indicators">
-                        <span class="dot" onclick="currentSlide(1)"></span>
-                        <span class="dot" onclick="currentSlide(2)"></span>
-                        <span class="dot" onclick="currentSlide(3)"></span>
-                        <span class="dot" onclick="currentSlide(4)"></span>
-                    </div>
-                    <p>Uso: Piso Junta: 3mm Acabado: Brillante Textura: Simil Madera Revestimiento mínimo: 3mm</p>
-                </div>
-                <div class="modal-footer">
-                    <button onclick="closeModal('modal6')">Cerrar</button>
-                </div>
-            </div>
-        </div>
-    </article>
-    <!-- Denver Beige -->
-    <article class="product-item">
-        <h2>Denver Beige</h2>
-        <img src="imagenes/denverbeige.png" alt="Denver Beige">
-        
-        <button onclick="openModal('modal7')">Ver más</button>
-    
-        <!-- Ventana emergente (modal) -->
-        <div id="modal7" class="modal">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2>Denver Beige</h2>
-                    <span class="close" onclick="closeModal('modal7')">&times;</span>
-                </div>
-                <div class="modal-body">
-                    <div class="carousel">
-                        <img src="imagenes/DenverBeige/denverbeige1.png" alt="Denver Beige" class="carousel-image">
-                        <img src="imagenes/DenverBeige/denverbeige2.png" alt="Denver Beige" class="carousel-image" style="display:none;">
-                        <img src="imagenes/DenverBeige/denverbeige3.png" alt="Denver Beige" class="carousel-image" style="display:none;">
-                        <img src="imagenes/DenverBeige/denverbeige4.png" alt="Denver Beige" class="carousel-image" style="display:none;">
-                        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-                        <a class="next" onclick="changeSlide(1)">&#10095;</a>
-                    </div>
-                    <div class="carousel-indicators">
-                        <span class="dot" onclick="currentSlide(1)"></span>
-                        <span class="dot" onclick="currentSlide(2)"></span>
-                        <span class="dot" onclick="currentSlide(3)"></span>
-                        <span class="dot" onclick="currentSlide(4)"></span>
-                    </div>
-                    <p>Uso: Piso Junta: 3mm Acabado: Brillante Textura: Liso Revestimiento mínimo: 3mm</p>
-                </div>
-                <div class="modal-footer">
-                    <button onclick="closeModal('modal7')">Cerrar</button>
-                </div>
-            </div>
-        </div>
-    </article>
-    <!-- Granada Beige -->
-    <article class="product-item">
-        <h2>Granada Beige</h2>
-        <img src="imagenes/granadabeige.png" alt="Granada Beige">      
-        <button onclick="openModal('modal8')">Ver más</button>
-    
-        <!-- Ventana emergente (modal) -->
-        <div id="modal8" class="modal">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2>Granada Beige</h2>
-                    <span class="close" onclick="closeModal('modal8')">&times;</span>
-                </div>
-                <div class="modal-body">
-                    <div class="carousel">
-                        <img src="imagenes/GranadaBeige/granadabeige1.png" alt="Granada Beige" class="carousel-image">
-                        <img src="imagenes/GranadaBeige/granadabeige2.png" alt="Granada Beige" class="carousel-image" style="display:none;">
-                        <img src="imagenes/GranadaBeige/granadabeige3.png" alt="Granada Beige" class="carousel-image" style="display:none;">
-                        <img src="imagenes/GranadaBeige/granadabeige4.png" alt="Granada Beige" class="carousel-image" style="display:none;">
-                        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-                        <a class="next" onclick="changeSlide(1)">&#10095;</a>
-                    </div>
-                    <div class="carousel-indicators">
-                        <span class="dot" onclick="currentSlide(1)"></span>
-                        <span class="dot" onclick="currentSlide(2)"></span>
-                        <span class="dot" onclick="currentSlide(3)"></span>
-                        <span class="dot" onclick="currentSlide(4)"></span>
-                    </div>
-                    <p>Uso: Piso Junta: 3mm Acabado: Brillante Textura: Liso Revestimiento mínimo: 3mm</p>
-                </div>
-                <div class="modal-footer">
-                    <button onclick="closeModal('modal8')">Cerrar</button>
-                </div>
-            </div>
-        </div>
-    </article>
-    <!-- Ibiza Blanco -->
-    <article class="product-item">
-        <h2>Ibiza Blanco</h2>
-        <img src="imagenes/paoibiza34x51.png" alt="Ibiza Blanco">
-        <button onclick="openModal('modal9')">Ver más</button>
-    
-        <!-- Ventana emergente (modal) -->
-        <div id="modal9" class="modal">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2>Ibiza Blanco</h2>
-                    <span class="close" onclick="closeModal('modal9')">&times;</span>
-                </div>
-                <div class="modal-body">
-                    <div class="carousel">
-                        <img src="imagenes/IbizaBlanco/ibizablanco1.png" alt="Ibiza Blanco" class="carousel-image">
-                        <img src="imagenes/IbizaBlanco/ibizablanco2.png" alt="Ibiza Blanco" class="carousel-image" style="display:none;">
-                        <img src="imagenes/IbizaBlanco/ibizablanco3.png" alt="Ibiza Blanco" class="carousel-image" style="display:none;">
-                        <img src="imagenes/IbizaBlanco/ibizablanco4.png" alt="Ibiza Blanco" class="carousel-image" style="display:none;">
-                        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-                        <a class="next" onclick="changeSlide(1)">&#10095;</a>
-                    </div>
-                    <div class="carousel-indicators">
-                        <span class="dot" onclick="currentSlide(1)"></span>
-                        <span class="dot" onclick="currentSlide(2)"></span>
-                        <span class="dot" onclick="currentSlide(3)"></span>
-                        <span class="dot" onclick="currentSlide(4)"></span>
-                    </div>
-                    <p>Uso: Piso Junta: 3mm Acabado: Brillante Textura: Liso Revestimiento mínimo: 3mm</p>
-                </div>
-                <div class="modal-footer">
-                    <button onclick="closeModal('modal9')">Cerrar</button>
-                </div>
-            </div>
-        </div>
-    </article>
-    <!-- Mármol Calacata -->
-    <article class="product-item">
-        <h2>Marmol Calacata</h2>
-        <img src="imagenes/calacta-placa.png" alt="Ibiza Blanco">      
-        <button onclick="openModal('modal10')">Ver más</button>
-    
-        <!-- Ventana emergente (modal) -->
-        <div id="modal10" class="modal">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2>Marmol Calacata</h2>
-                    <span class="close" onclick="closeModal('modal10')">&times;</span>
-                </div>
-                <div class="modal-body">
-                    <div class="carousel">
-                        <img src="imagenes/MarmolCalacata/MarmolCalacata1.png" alt="Ibiza Blanco" class="carousel-image">
-                        <img src="imagenes/MarmolCalacata/MarmolCalacata2.png" alt="Ibiza Blanco" class="carousel-image" style="display:none;"> 
-                        <img src="imagenes/MarmolCalacata/MarmolCalacata3.png" alt="Ibiza Blanco" class="carousel-image" style="display:none;">
-                        <img src="imagenes/MarmolCalacata/MarmolCalacata4.png" alt="Ibiza Blanco" class="carousel-image" style="display:none;">         
-                        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-                        <a class="next" onclick="changeSlide(1)">&#10095;</a>
-                    </div>
-                    <div class="carousel-indicators">
-                        <span class="dot" onclick="currentSlide(1)"></span>
-                        <span class="dot" onclick="currentSlide(2)"></span>
-                        <span class="dot" onclick="currentSlide(3)"></span>
-                        <span class="dot" onclick="currentSlide(4)"></span>
-                    </div>
-                    <p>Uso: Piso Junta: 3mm Acabado: Brillante Textura: Liso Revestimiento mínimo: 3mm</p>
-                </div>
-                <div class="modal-footer">
-                    <button onclick="closeModal('modal10')">Cerrar</button>
-                </div>
-            </div>
-        </div>
-    </article>
-    <!-- Modena Beige -->
-    <article class="product-item">
-        <h2>Modena Beige</h2>
-        <img src="imagenes/modenabeige.png" alt="Ibiza Blanco"> 
-        <button onclick="openModal('modal11')">Ver más</button>
-    
-        <!-- Ventana emergente (modal) -->
-        <div id="modal11" class="modal">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2>Modena Beige</h2>
-                    <span class="close" onclick="closeModal('modal11')">&times;</span>
-                </div>
-                <div class="modal-body">
-                    <div class="carousel">
-                        <img src="imagenes/ModenaBeige/ModenaBeige1.png" alt="Ibiza Blanco" class="carousel-image">
-                        <img src="imagenes/ModenaBeige/ModenaBeige2.png" alt="Ibiza Blanco" class="carousel-image" style="display:none;"> 
-                        <img src="imagenes/ModenaBeige/ModenaBeige3.png" alt="Ibiza Blanco" class="carousel-image" style="display:none;">
-                        <img src="imagenes/ModenaBeige/ModenaBeige4.png" alt="Ibiza Blanco" class="carousel-image" style="display:none;">         
-                        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-                        <a class="next" onclick="changeSlide(1)">&#10095;</a>
-                    </div>
-                    <div class="carousel-indicators">
-                        <span class="dot" onclick="currentSlide(1)"></span>
-                        <span class="dot" onclick="currentSlide(2)"></span>
-                        <span class="dot" onclick="currentSlide(3)"></span>
-                        <span class="dot" onclick="currentSlide(4)"></span>
-                    </div>
-                    <p>Uso: Piso Junta: 3mm Acabado: Brillante Textura: Liso Revestimiento mínimo: 3mm</p>
-                </div>
-                <div class="modal-footer">
-                    <button onclick="closeModal('modal11')">Cerrar</button>
-                </div>
-            </div>
-        </div>
-    </article>
-    <!-- Pórfido Rojo --> 
-    <article class="product-item">
-        <h2>Pórfido Rojo</h2>
-        <img src="imagenes/porfido.png" alt="porfido"> 
-        <button onclick="openModal('modal12')">Ver más</button>
-    
-        <!-- Ventana emergente (modal) -->
-        <div id="modal12" class="modal">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2>Pórfido Rojo</h2>
-                    <span class="close" onclick="closeModal('modal12')">&times;</span>
-                </div>
-                <div class="modal-body">
-                    <div class="carousel">
-                        <img src="imagenes/PorfidoRojo/PorfidoRojo1.png" alt="porfido" class="carousel-image">
-                        <img src="imagenes/PorfidoRojo/PorfidoRojo2.png" alt="porfido" class="carousel-image" style="display:none;"> 
-                        <img src="imagenes/PorfidoRojo/PorfidoRojo3.png" alt="porfido" class="carousel-image" style="display:none;">
-                        <img src="imagenes/PorfidoRojo/PorfidoRojo4.png" alt="porfido" class="carousel-image" style="display:none;">         
-                        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-                        <a class="next" onclick="changeSlide(1)">&#10095;</a>
-                    </div>
-                    <div class="carousel-indicators">
-                        <span class="dot" onclick="currentSlide(1)"></span>
-                        <span class="dot" onclick="currentSlide(2)"></span>
-                        <span class="dot" onclick="currentSlide(3)"></span>
-                        <span class="dot" onclick="currentSlide(4)"></span>
-                    </div>
-                    <p>Uso: Piso Junta: 3mm Acabado: Brillante Textura: Liso Revestimiento mínimo: 3mm</p>
-                </div>
-                <div class="modal-footer">
-                    <button onclick="closeModal('modal12')">Cerrar</button>
-                </div>
-            </div>
-        </div>
-    </article>
-    <!-- Shanghai Gris -->
-    <article class="product-item">
-    <h2>Shanghai Gris</h2>
-    <img src="imagenes/shangai34x51panelweb.png" alt="Shanghai Gris">
-    
-    <button onclick="openModal('modal13')">Ver más</button>
-
-    <div id="modal13" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2>Shanghai Gris</h2>
-                <span class="close" onclick="closeModal('modal13')">&times;</span>
-            </div>
-            <div class="modal-body">
-                <div class="carousel">
-                    <img src="imagenes/shanghigris/shanhi-gris1.png" alt="porfido" class="carousel-image">
-                    <img src="imagenes/shanghigris/shanhi-gris2.png" alt="porfido" class="carousel-image" style="display:none;"> 
-                    <img src="imagenes/shanghigris/shanhi-gris3.png" alt="porfido" class="carousel-image" style="display:none;">
-                    <img src="imagenes/shanghigris/shanhi-gris4.png" alt="porfido" class="carousel-image" style="display:none;">
-                    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-                    <a class="next" onclick="changeSlide(1)">&#10095;</a>
-                </div>
-                <div class="carousel-indicators">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
-                    <span class="dot" onclick="currentSlide(4)"></span>
-                </div>
-                <p>Uso: Piso Junta: 3mm Acabado: Brillante Textura: Liso Revestimiento mínimo: 3mm</p>
-            </div>
-            <div class="modal-footer">
-                <button onclick="closeModal('modal13')">Cerrar</button>
-            </div>
-        </div>
-    </div>
-    </article>
     <!-- Statuario Blanco -->
     <article class="product-item">
-        <h2>Statuario Blanco</h2>
+        <h2>Statuario Blanco 30x45</h2>
         <img src="imagenes/statuario-blanco-placa.png" alt="Statuario Blanco">
         <button onclick="openModal('modal14')">Ver más</button>
     
         <div id="modal14" class="modal">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h2>Statuario Blanco</h2>
+                    <h2>Statuario Blanco 30x45</h2>
                     <span class="close" onclick="closeModal('modal14')">&times;</span>
                 </div>
                 <div class="modal-body">
@@ -533,14 +137,452 @@
                         <span class="dot" onclick="currentSlide(4)"></span>
                         <span class="dot" onclick="currentSlide(5)"></span>
                     </div>
-                    <p>Uso: Piso Junta: 3mm Acabado: Brillante Textura: Liso Revestimiento mínimo: 3mm</p>
+       
                 </div>
                 <div class="modal-footer">
                     <button onclick="closeModal('modal14')">Cerrar</button>
                 </div>
             </div>
         </div>
-        </article>
+    </article>
+    <!-- Cairo Gris -->
+    <article class="product-item">
+        <h2>Cairo Gris 45x45</h2>
+        <img src="imagenes/cairo-gris-placa.png" alt="Cairo Gris">
+        
+        <button onclick="openModal('modal4')">Ver más</button>
+    
+        <!-- Ventana emergente (modal) -->
+        <div id="modal4" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Cairo Gris 45x45</h2>
+                    <span class="close" onclick="closeModal('modal4')">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <div class="carousel">
+                        <img src="imagenes/CairoGris/cairo-gris1.jpg" alt="Cairo Negro" class="carousel-image">
+                        <img src="imagenes/CairoGris/cairo-gris2.jpg" alt="Cairo Negro" class="carousel-image" style="display:none;">
+                        <img src="imagenes/CairoGris/cairo-gris3.jpg" alt="Cairo Negro" class="carousel-image" style="display:none;">
+                        <img src="imagenes/CairoGris/cairo-gris4.jpg" alt="Cairo Negro" class="carousel-image" style="display:none;">
+                        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                    </div>
+                    <div class="carousel-indicators">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                    </div>
+                   
+                </div>
+                <div class="modal-footer">
+                    <button onclick="closeModal('modal4')">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </article>
+    <!-- Cairo Beige -->
+    <article class="product-item">
+        <h2>Cairo Beige 45x45</h2>
+        <img src="imagenes/cairobeige.jpg" alt="Cairo Gris">
+        
+        <button onclick="openModal('modal4')">Ver más</button>
+    
+        <!-- Ventana emergente (modal) -->
+        <div id="modal4" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Cairo Beige 45x45</h2>
+                    <span class="close" onclick="closeModal('modal4')">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <div class="carousel">
+                        <img src="imagenes/CairoGris/cairo-gris1.jpg" alt="Cairo Negro" class="carousel-image">
+                        <img src="imagenes/CairoGris/cairo-gris2.jpg" alt="Cairo Negro" class="carousel-image" style="display:none;">
+                        <img src="imagenes/CairoGris/cairo-gris3.jpg" alt="Cairo Negro" class="carousel-image" style="display:none;">
+                        <img src="imagenes/CairoGris/cairo-gris4.jpg" alt="Cairo Negro" class="carousel-image" style="display:none;">
+                        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                    </div>
+                    <div class="carousel-indicators">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                    </div>
+                  
+                </div>
+                <div class="modal-footer">
+                    <button onclick="closeModal('modal4')">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </article>
+    <!-- Cairo Negro -->
+    <article class="product-item">
+        <h2>Cairo Negro 45x45</h2>
+        <img src="imagenes/cairo-negro-placa.png" alt="Cairo Negro">
+        
+        <button onclick="openModal('modal3')">Ver más</button>
+    
+        <!-- Ventana emergente (modal) -->
+        <div id="modal3" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Cairo Negro 45x45</h2>
+                    <span class="close" onclick="closeModal('modal3')">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <div class="carousel">
+                        <img src="imagenes/CairoNegro/cairo-negro1.jpg" alt="Cairo Negro" class="carousel-image">
+                        <img src="imagenes/CairoNegro/cairo-negro2.jpg" alt="Cairo Negro" class="carousel-image" style="display:none;">
+                        <img src="imagenes/CairoNegro/cairo-negro3.jpg" alt="Cairo Negro" class="carousel-image" style="display:none;">
+                        <img src="imagenes/CairoNegro/cairo-negro4.jpg" alt="Cairo Negro" class="carousel-image" style="display:none;">
+                        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                    </div>
+                    <div class="carousel-indicators">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button onclick="closeModal('modal3')">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </article>
+    <!-- Curupay Simil Madera -->
+    <article class="product-item">
+        <h2>Curupay Simil Madera 46x46</h2>
+        <img src="imagenes/curupay.png" alt="Curupay Simil Madera">
+        
+        <button onclick="openModal('modal6')">Ver más</button>
+    
+        <!-- Ventana emergente (modal) -->
+        <div id="modal6" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Curupay Simil Madera 46x46</h2>
+                    <span class="close" onclick="closeModal('modal6')">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <div class="carousel">
+                        <img src="imagenes/CurupaySimilMadera/curupay1.png" alt="Curupay Simil Madera" class="carousel-image">
+                        <img src="imagenes/CurupaySimilMadera/curupay2.png" alt="Curupay Simil Madera" class="carousel-image" style="display:none;">
+                        <img src="imagenes/CurupaySimilMadera/curupay3.png" alt="Curupay Simil Madera" class="carousel-image" style="display:none;">
+                        <img src="imagenes/CurupaySimilMadera/curupay4.png" alt="Curupay Simil Madera" class="carousel-image" style="display:none;">
+                        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                    </div>
+                    <div class="carousel-indicators">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button onclick="closeModal('modal6')">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </article>
+    <!-- Denver Beige -->
+    <article class="product-item">
+        <h2>Denver Beige 46x46</h2>
+        <img src="imagenes/denverbeige.png" alt="Denver Beige">
+        
+        <button onclick="openModal('modal7')">Ver más</button>
+    
+        <!-- Ventana emergente (modal) -->
+        <div id="modal7" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Denver Beige 46x46</h2>
+                    <span class="close" onclick="closeModal('modal7')">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <div class="carousel">
+                        <img src="imagenes/DenverBeige/denverbeige1.png" alt="Denver Beige" class="carousel-image">
+                        <img src="imagenes/DenverBeige/denverbeige2.png" alt="Denver Beige" class="carousel-image" style="display:none;">
+                        <img src="imagenes/DenverBeige/denverbeige3.png" alt="Denver Beige" class="carousel-image" style="display:none;">
+                        <img src="imagenes/DenverBeige/denverbeige4.png" alt="Denver Beige" class="carousel-image" style="display:none;">
+                        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                    </div>
+                    <div class="carousel-indicators">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button onclick="closeModal('modal7')">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </article>
+    <!-- Granada Beige -->
+    <article class="product-item">
+        <h2>Granada Beige 50x50</h2>
+        <img src="imagenes/granadabeige.png" alt="Granada Beige">      
+        <button onclick="openModal('modal8')">Ver más</button>
+    
+        <!-- Ventana emergente (modal) -->
+        <div id="modal8" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Granada Beige 50x50</h2>
+                    <span class="close" onclick="closeModal('modal8')">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <div class="carousel">
+                        <img src="imagenes/GranadaBeige/granadabeige1.png" alt="Granada Beige" class="carousel-image">
+                        <img src="imagenes/GranadaBeige/granadabeige2.png" alt="Granada Beige" class="carousel-image" style="display:none;">
+                        <img src="imagenes/GranadaBeige/granadabeige3.png" alt="Granada Beige" class="carousel-image" style="display:none;">
+                        <img src="imagenes/GranadaBeige/granadabeige4.png" alt="Granada Beige" class="carousel-image" style="display:none;">
+                        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                    </div>
+                    <div class="carousel-indicators">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button onclick="closeModal('modal8')">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </article>
+    <!-- Ibiza Blanco -->
+    <article class="product-item">
+        <h2>Ibiza Blanco 34x51</h2>
+        <img src="imagenes/agotado.png" alt="agotado" class="agotado" style="border:0;">
+        <img src="imagenes/paoibiza34x51.png" alt="Ibiza Blanco">
+        
+        <button onclick="openModal('modal9')">Ver más</button>
+    
+        <!-- Ventana emergente (modal) -->
+        <div id="modal9" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Ibiza Blanco 34x51</h2>
+                    <span class="close" onclick="closeModal('modal9')">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <div class="carousel">
+                        <img src="imagenes/IbizaBlanco/ibizablanco1.png" alt="Ibiza Blanco" class="carousel-image">
+                        <img src="imagenes/IbizaBlanco/ibizablanco2.png" alt="Ibiza Blanco" class="carousel-image" style="display:none;">
+                        <img src="imagenes/IbizaBlanco/ibizablanco3.png" alt="Ibiza Blanco" class="carousel-image" style="display:none;">
+                        <img src="imagenes/IbizaBlanco/ibizablanco4.png" alt="Ibiza Blanco" class="carousel-image" style="display:none;">
+                        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                    </div>
+                    <div class="carousel-indicators">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button onclick="closeModal('modal9')">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </article>
+    <!-- Mármol Calacata -->
+    <article class="product-item">
+        <h2>Marmol Calacata 50x50 o 35x60</h2>
+        <img src="imagenes/calacta-placa.png" alt="Ibiza Blanco">      
+        <button onclick="openModal('modal10')">Ver más</button>
+    
+        <!-- Ventana emergente (modal) -->
+        <div id="modal10" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Marmol Calacata 50x50 o 35x60</h2>
+                    <span class="close" onclick="closeModal('modal10')">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <div class="carousel">
+                        <img src="imagenes/MarmolCalacata/MarmolCalacata1.png" alt="Ibiza Blanco" class="carousel-image">
+                        <img src="imagenes/MarmolCalacata/MarmolCalacata2.png" alt="Ibiza Blanco" class="carousel-image" style="display:none;"> 
+                        <img src="imagenes/MarmolCalacata/MarmolCalacata3.png" alt="Ibiza Blanco" class="carousel-image" style="display:none;">
+                        <img src="imagenes/MarmolCalacata/MarmolCalacata4.png" alt="Ibiza Blanco" class="carousel-image" style="display:none;">         
+                        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                    </div>
+                    <div class="carousel-indicators">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button onclick="closeModal('modal10')">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </article>
+    <!-- Modena Beige -->
+    <article class="product-item">
+        <h2>Modena Beige 30x45</h2>
+        <img src="imagenes/modenabeige.png" alt="Ibiza Blanco"> 
+        <button onclick="openModal('modal11')">Ver más</button>
+    
+        <!-- Ventana emergente (modal) -->
+        <div id="modal11" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Modena Beige 30x45</h2>
+                    <span class="close" onclick="closeModal('modal11')">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <div class="carousel">
+                        <img src="imagenes/ModenaBeige/ModenaBeige1.png" alt="Ibiza Blanco" class="carousel-image">
+                        <img src="imagenes/ModenaBeige/ModenaBeige2.png" alt="Ibiza Blanco" class="carousel-image" style="display:none;"> 
+                        <img src="imagenes/ModenaBeige/ModenaBeige3.png" alt="Ibiza Blanco" class="carousel-image" style="display:none;">
+                        <img src="imagenes/ModenaBeige/ModenaBeige4.png" alt="Ibiza Blanco" class="carousel-image" style="display:none;">         
+                        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                    </div>
+                    <div class="carousel-indicators">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button onclick="closeModal('modal11')">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </article>
+    <!-- Pórfido Rojo --> 
+    <article class="product-item">
+        <h2>Pórfido Rojo 46x46</h2>
+        <!--<img src="imagenes/agotado.png" alt="agotado" class="agotado" style="border: 0;">--> 
+        <img src="imagenes/porfido.png" alt="porfido"> 
+        
+        <button onclick="openModal('modal12')">Ver más</button>
+    
+        <!-- Ventana emergente (modal) -->
+        <div id="modal12" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Pórfido Rojo 46x46</h2>
+                    <span class="close" onclick="closeModal('modal12')">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <div class="carousel">
+                        <img src="imagenes/PorfidoRojo/PorfidoRojo1.png" alt="porfido" class="carousel-image">
+                        <img src="imagenes/PorfidoRojo/PorfidoRojo2.png" alt="porfido" class="carousel-image" style="display:none;"> 
+                        <img src="imagenes/PorfidoRojo/PorfidoRojo3.png" alt="porfido" class="carousel-image" style="display:none;">
+                        <img src="imagenes/PorfidoRojo/PorfidoRojo4.png" alt="porfido" class="carousel-image" style="display:none;">         
+                        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                    </div>
+                    <div class="carousel-indicators">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                    </div>
+      
+                </div>
+                <div class="modal-footer">
+                    <button onclick="closeModal('modal12')">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </article>
+    <!-- Shanghai Gris -->
+    <article class="product-item">
+    <h2>Shanghai Gris 30x45</h2>
+    <img src="imagenes/shangai34x51panelweb.png" alt="Shanghai Gris">
+    
+    <button onclick="openModal('modal13')">Ver más</button>
+
+    <div id="modal13" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Shanghai Gris 30x45</h2>
+                <span class="close" onclick="closeModal('modal13')">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="carousel">
+                    <img src="imagenes/shanghigris/shanhi-gris1.png" alt="porfido" class="carousel-image">
+                    <img src="imagenes/shanghigris/shanhi-gris2.png" alt="porfido" class="carousel-image" style="display:none;"> 
+                    <img src="imagenes/shanghigris/shanhi-gris3.png" alt="porfido" class="carousel-image" style="display:none;">
+                    <img src="imagenes/shanghigris/shanhi-gris4.png" alt="porfido" class="carousel-image" style="display:none;">
+                    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                </div>
+                <div class="carousel-indicators">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button onclick="closeModal('modal13')">Cerrar</button>
+            </div>
+        </div>
+    </div>
+    </article>
+    <!-- Blanco Satinado -->
+    <article class="product-item">
+        <h2>Blanco Satinado 35x60</h2>
+        <img src="imagenes/blancosatinado.png" alt="Blanco Satinado">
+        
+        <button onclick="openModal('modal2')">Ver más</button>
+    
+        <!-- Ventana emergente (modal) -->
+        <div id="modal2" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Blanco Satinado 35x60</h2>
+                    <span class="close" onclick="closeModal('modal2')">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <div class="carousel">
+                        <img src="imagenes/BlancoSatinado/blancosatinado1.png" alt="Blanco Satinado" class="carousel-image">
+                        <img src="imagenes/BlancoSatinado/blancosatinado2.png" alt="Blanco Satinado" class="carousel-image">
+                        <img src="imagenes/BlancoSatinado/blancosatinado3.png" alt="Blanco Satinado" class="carousel-image">
+                        <img src="imagenes/BlancoSatinado/blancosatinado4.png" alt="Blanco Satinado" class="carousel-image">
+                        <img src="imagenes/BlancoSatinado/blancosatinado5.png" alt="Blanco Satinado" class="carousel-image">
+                        <img src="imagenes/BlancoSatinado/blancosatinado6.png" alt="Blanco Satinado" class="carousel-image">
+                        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                    </div>
+                    <div class="carousel-indicators">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                        <span class="dot" onclick="currentSlide(5)"></span>
+                        <span class="dot" onclick="currentSlide(6)"></span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button onclick="closeModal('modal2')">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </article>
 
     
 
