@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <title>Header de Navegación</title>
+    <style>
+        /* Estilos CSS para el header */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Lato', sans-serif;
+            background-color: #FAEEEE;
+            color: #333;
+            text-align: center;
+        }
+        header {
+            background-color: #FFF;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            padding: 5px 50px 0px 50px;
+            align-items: center;
+        }
+        .icon {
+            margin-right: 15px;
+            margin-left: 15px;
+        }
+        nav a {
+            color: #161616;
+            text-decoration: none;
+            font-family: 'Lato', sans-serif;
+            font-size: 17px;
+            font-weight: 700;
+            margin: 0;
+            display: flex;
+            padding: 20px 15px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            position: relative; /* Necesario para el efecto hover */
+        }
+        nav a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 3px;
+            background-color: red;
+            left: 0;
+            bottom: 0; /* Ajusta la posición de la línea */
+            transition: width 0.3s ease;
+        }
+        nav a:hover::after {
+            width: 100%; /* La línea se expande al 100% del ancho del enlace al hacer hover */
+        }
+        .search-container {
+            margin-left: 30px;
+            display: flex;
+            align-items: center;
+        }
+        .search-container input[type="text"] {
+            font-family: 'Lato', sans-serif;
+            color: rgba(137, 137, 137, 0.50);
+            border-radius: 5px;
+            width: 441px;
+            height: 36px;
+            border: 1px solid #161616;
+            padding-left: 20px;
+            font-size: 19px;
+        }
+        .search-container img {
+            margin-left: -35px; /* Ajusta la posición del icono */
+            cursor: pointer;
+        }
+        .links {
+            display: flex;
+            align-items: center;
+            flex: 1;
+        }
+        .user {
+            margin-left: 4.0rem; /* Esto mueve el contenedor de usuario a la derecha */
+            display: flex;
+            align-items: center;
+            padding-right: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="icon">
+                <img src="img/icon.png" alt="Icono" width="50" height="50">
+            </div>
+            <div class="links">
+                <a href="#">Buscador</a>
+                <a href="#">Devlogs</a>
+                <a href="#">Jams</a>
+                <a href="#">Feed</a>
+                <a href="#">Comunidad</a>
+                <div class="search-container">
+                    <input type="text" placeholder="Busca juegos o creadores…">
+                    <img src="img/Vector.png" alt="Buscar" width="20" height="20">
+                </div>
+            </div>
+            <div class="user">
+                <img src="img/default.png" alt="Usuario" width="50" height="50">
+                <a href="#">Usuario</a>
+                <a href="#"><img src="img/userspan.png" alt="Más opciones"></a>
+            </div>
+        </nav>
+    </header>
+    <!-- El resto del contenido de tu página iría aquí -->
+</body>
+</html>
