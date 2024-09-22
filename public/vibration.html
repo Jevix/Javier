@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba de Vibración</title>
+</head>
+<body>
+    <h1>Verificar Soporte de Vibración</h1>
+
+    <!-- Botón para verificar y activar la vibración -->
+    <button onclick="comprobarYVibrar()">Comprobar y Vibrar</button>
+
+    <script>
+        // Verificar si el navegador soporta vibración
+        function comprobarYVibrar() {
+            if (navigator.vibrate) {
+                navigator.vibrate(1000); // Vibrar durante 1 segundo
+                alert("Vibración activada");
+            } else {
+                alert("Este dispositivo o navegador no soporta la vibración.");
+            }
+        }
+    </script>
+</body>
+</html>
